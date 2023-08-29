@@ -65,12 +65,25 @@
 
 
     <script>
+
+    
+    function checkUserAge() {
+      const userAge = prompt("Please enter your age:")
+      if (Number(userAge) < 18) {
+        alert("Not today, chickpea🐣")
+        return checkUserAge();
+      } else {
+        alert("Welcome!")
+      } 
+    }
+
+    checkUserAge();
+    
 // Main Form check @ symbol 
 document.querySelector("#main-form").addEventListener("submit", function(event) {
   const email = document.getElementById("email").value;
   if (!email.includes("@")) {
     alert("Invalid email address.");
-    // event.preventDefault();
   }
 });
 
