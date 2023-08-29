@@ -29,9 +29,9 @@
   }
   
   body {
-    background: linear-gradient(270deg, #fe935d, #ff5e62);
+    background: linear-gradient(270deg, #ff8243, #ff5e62);
     background-size: 200% 200%;
-    animation: gradient-animation 5s ease infinite;
+    animation: gradient-animation 6s ease infinite;
   }
   
 

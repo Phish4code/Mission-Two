@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script defer src="script.js"></script>
+    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission Two</title>
@@ -69,11 +69,16 @@
 
     function checkUserAge() {
       const userAge = prompt("Please enter your age:")
+      const currentTime = Intl.DateTimeFormat('en-nz', { 
+       weekay: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true 
+      }).format(new Date()); 
+    
       if (Number(userAge) < 18) {
         alert("Not today, chickpea🐣")
         return checkUserAge();
       } else {
         alert("Welcome!")
+        console.log(currentTime);
       } 
     }
 
@@ -94,12 +99,14 @@ document.querySelector("#main-form").addEventListener("submit", function(event) 
   const email = document.getElementById("email").value;
   if (!email.includes("@")) {
     alert("Invalid email address.");
+    return event.preventDefault();
   }
 });
 
 
       function changeText() {
-        document.getElementById('newsletter-text').innerHTML = `Thanks for signing up!`
+        // event.preventDefault();
+        document.getElementById('newsletter-text').innerHTML = `Sign up for your FREE Gift!`
 
       }
       changeText();
