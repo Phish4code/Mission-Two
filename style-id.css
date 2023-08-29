@@ -18,6 +18,8 @@
     /* padding: 50%; */
 }
 
+
+
 #newsletter-text {
     color: #fffb00;
     text-align: center;
@@ -91,8 +93,10 @@
     margin-left: 30px;
     margin-right: 30px;
     border-radius: 30%;
-    
-    
+}
+
+#main-title:hover {
+    cursor: grabbing;
 }
 
 #main-title2 {
