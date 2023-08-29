@@ -59,12 +59,14 @@
 <!-- demo text to pin to bottom to check nav bar is sticky -->
     <footer><p>WeLoveThosePeaches Copyright 2023 &copy;</p></footer>
 
-<!-- Email Check -->
 
-
-    <script>
-
+<!-- ######################################################## -->
+<!-- ###################### THE FUN STUFF ################### -->
     
+    <script>
+      alert("*** DISCLAIMER *** We are not responsible for any injuries to your eyes while viewing any content on this page. YOU MUST BE 18+ TO ENTER."
+      )
+
     function checkUserAge() {
       const userAge = prompt("Please enter your age:")
       if (Number(userAge) < 18) {
@@ -77,13 +79,7 @@
 
     checkUserAge();
     
-// Main Form check @ symbol 
-document.querySelector("#main-form").addEventListener("submit", function(event) {
-  const email = document.getElementById("email").value;
-  if (!email.includes("@")) {
-    alert("Invalid email address.");
-  }
-});
+
 
 // Create a function to check the name is valid
 function checkName() {
@@ -93,6 +89,14 @@ function checkName() {
   }
 }
 
+//function to check @ symbol 
+document.querySelector("#main-form").addEventListener("submit", function(event) {
+  const email = document.getElementById("email").value;
+  if (!email.includes("@")) {
+    alert("Invalid email address.");
+  }
+});
+
 
       function changeText() {
         document.getElementById('newsletter-text').innerHTML = `Thanks for signing up!`
@@ -100,7 +104,7 @@ function checkName() {
       }
       changeText();
 
-// Light Switch Function 🎉
+// Light Switch Function lessshgo 🎉
       function playMusic() {
   const audio = document.getElementById('theGoodStuff');
   
@@ -111,8 +115,6 @@ function checkName() {
     audio.currentTime = 0; 
   }
 }
-
-
 
     </script>
 
