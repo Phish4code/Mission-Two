@@ -96,7 +96,7 @@
 }
 
 #main-title:hover {
-    cursor: grabbing;
+    cursor: grab;
 }
 
 #main-title2 {

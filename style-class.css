@@ -16,7 +16,7 @@
     /* Add your tablet-specific styles here */
   }
   
-  @keyframes gradient-animation {
+  /* @keyframes gradient-animation {
     0% {
       background-position: 0% 50%;
     }
@@ -26,12 +26,12 @@
     100% {
       background-position: 0% 50%;
     }
-  }
+  } */
   
   body {
-    background: linear-gradient(270deg, #ff6c28c7, #ff5e62);
-    background-size: 200% 200%;
-    animation: gradient-animation 10s ease infinite;
+    background: linear-gradient(to right, #fe5053, #ef530bdb);
+    /* background-size: 200% 200%;
+    animation: gradient-animation 5s ease infinite; */
   }
   
 
@@ -50,7 +50,7 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     position: sticky;
-    background-color: #000000ae;
+    background-color: #000000b3;
     color: #ffffffcf;
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -62,7 +62,7 @@ a:hover {
 
 /* NAVIGATION BAR HOVER EFFECTS ############################*/
 .main-nav:hover {
-    background-color: #000000ae;
+    background-color: #000000b3;
     color: #ffffffcf;
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -89,11 +89,13 @@ a:hover {
     background-color: rgba(255, 95, 231, 0);
     color: #ffe252;
     font-weight: 650;
+    border: none
 }
 
 .lights:hover {
     background-color: #fe935d;
     cursor: pointer;
+    color: white;
 }
 
 .nav-home:hover {
